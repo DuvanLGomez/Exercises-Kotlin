@@ -1,15 +1,15 @@
 fun main(args: Array<String>) {
-    println("Ingrasa una letra: ")
+    println("Ingresa una letra: ")
     val letter: Char? = readLine()?.get(0)
-    println("Ingrasa una palabra: ")
+    println("Ingresa una palabra: ")
     val text: String? = readLine()
 
     if (letter != null && text != null) {
         val result = letter_count(letter, text)
         if (result == 1){
-            println("Esta leta se encontó $result vez")
+            println("Esta letra se encontró $result vez")
         } else {
-            println("Esta leta se encontó $result veces")
+            println("Esta letra se encontró $result veces")
         }
        
     } else {
